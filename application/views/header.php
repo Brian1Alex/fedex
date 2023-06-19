@@ -52,7 +52,7 @@
                 <a class="nav-link" href="about.html">Sucursales</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="services.html">Clientes</a>
+                <a class="nav-link" href="<?php echo site_url() ?>/clientes/cliente">Clientes</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link " href="blog.html">Pedidos</a>
@@ -69,7 +69,7 @@
         <div class="menu_main">
           <ul>
             <li><a href="about.html">Sucursales</a></li>
-            <li><a href="services.html">Clientes</a></li>
+            <li><a href="<?php echo site_url() ?>/clientes/iniClie">Clientes</a></li>
             <li><a href="blog.html">Pedidos</a></li>
             <li><a href="contact.html">Contactanos</a></li>
           </ul>

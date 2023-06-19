@@ -7,6 +7,10 @@
         background-color: #E7FFFF;
     }
 
+    .ed{
+        color: blue;
+    }
+
  </style>
     
  
@@ -43,6 +47,9 @@
  <!-- javascript -->
  <script src="<?php echo base_url(); ?>/plantilla/js/owl.carousel.js"></script>
  <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+ <!-- API Key de GoogleMaps-->
+ <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCoObNZz2rn6AMxGvMKq1GDTFvd7CzGwdY&libraries=places&callback=initMap"></script>
+
 
 
  </body>
