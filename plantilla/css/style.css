@@ -394,7 +394,7 @@ button {
 
 .read_bt a:hover {
     background-color: #2b2278;
-    color: #ffffff;
+    color: #000000;
 }
 
 
@@ -495,6 +495,7 @@ button {
     font-size: 40px;
     color: #1f1f1f;
     font-weight: bold;
+    font-family: 'Righteous', Regular;
 }
 
 .about_text {
@@ -504,6 +505,7 @@ button {
     color: #1f1f1f;
     margin: 0px;
     padding-top: 40px;
+    font-family: 'Righteous', Regular;
 }
 
 .readmore_bt {

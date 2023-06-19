@@ -3,6 +3,10 @@
         color: aliceblue;
     }
 
+    .body{
+        background-color: #E7FFFF;
+    }
+
  </style>
     
  
@@ -10,8 +14,8 @@
  <div class="footer_section layout_padding">
      <div class="container">
          <div class="" Align="center">
-             <h1 class="tit">Confia tus envios mediante FedEx</h1>
-             <p>La mejor compañia en servicio de envios a nivel nacional e internacional</p>
+             <h1 class="blog_taital">Confia tus envios mediante FedEx</h1>
+             <p class="banner_text">La mejor compañia en servicios de logistica a nivel nacional e internacional</p>
              <hr class="lin">
          </div>
 
