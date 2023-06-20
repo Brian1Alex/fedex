@@ -1,5 +1,5 @@
 <div class="contact_section layout_padding">
-    <h1 class="contact_taital" Align="center">Listado de Clientes</h1>
+    <h1 class="contact_taital" Align="center">Listado de Pedidos</h1>
 
     <?php if ($pedidos) : ?>
         <table class="table table-striped">
@@ -39,7 +39,7 @@
                                 <i class=""><img src="<?php echo base_url(); ?>/assets/images/edit.png" alt=""></i>
                             </a>
                             &nbsp;&nbsp;&nbsp;
-                            <a href="<?php echo site_url(); ?>/Sucursales/eliminaSucu/<?php echo $filaTempo->id_suc; ?>" title="Eliminar Cliente" style="color:red;">
+                            <a href="<?php echo site_url(); ?>/Sucursales/eliminaSucu/<?php echo $filaTempo->id_ped; ?>" title="Eliminar Cliente" style="color:red;">
                                 <i class=""><img src="<?php echo base_url(); ?>/assets/images/trash.png" alt=""></i>
                             </a>
 
