@@ -55,10 +55,10 @@
                 <a class="nav-link" href="<?php echo site_url() ?>/clientes/iniClie">Clientes</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="blog.html">Pedidos</a>
+                <a class="nav-link " href="<?php echo site_url() ?>/pedidos/iniPedi">Pedidos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="contact.html">Contactanos</a>
+              <a class="nav-link " href="<?php echo site_url() ?>/contactanos/iniCon">Contactos</a>
               </li>
             </ul>
           </div>
@@ -70,8 +70,8 @@
           <ul>
             <li><a href="<?php echo site_url() ?>/sucursales/iniSucu">Sucursales</a></li>
             <li><a href="<?php echo site_url() ?>/clientes/iniClie">Clientes</a></li>
-            <li><a href="blog.html">Pedidos</a></li>
-            <li><a href="contact.html">Contactanos</a></li>
+            <li><a href="<?php echo site_url() ?>/pedidos/iniPedi">Pedidos</a></li>
+            <li><a href="<?php echo site_url() ?>/contactanos/iniCon">Contactos</a></li>
           </ul>
         </div>
       </div>
