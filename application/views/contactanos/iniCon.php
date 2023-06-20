@@ -20,7 +20,7 @@
                </div>
                <div class="col-md-4">
                   <div><img src="<?php echo base_url(); ?>/assets/images/pato.gif" class="services_img" Alt="ubicaciones"></div>
-                  <div class="btn_main"><a href="<?php echo site_url() ?>/pedidos/desPedi">Sucursales</a></div>
+                  <div class="btn_main"><a href="<?php echo site_url() ?>/sucursales/ubiSucu">Sucursales</a></div>
                </div>
             </div>
          </div>
