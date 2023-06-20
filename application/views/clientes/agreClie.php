@@ -21,12 +21,12 @@
                 <div class="col-md-4">
                     <label for=""> Telefono: <span class="obligatorio">(Campo Requerido)</span></label>
                     <br>
-                    <input type="number" placeholder="Ingresar el telefono del Cliente" class="form-control" name="tele_cli" value="">
+                    <input type="number" placeholder="Ingresar el telefono del Cliente" class="form-control" required min="99999999" name="tele_cli" value="">
                 </div>
                 <div class="col-md-4">
                     <label for=""> Cédula: <span class="obligatorio">(Campo Requerido)</span></label>
                     <br>
-                    <input type="number" placeholder="Ingresar la cedula del Cliente" class="form-control" name="cedu_cli" value="">
+                    <input type="number" placeholder="Ingresar la cedula del Cliente" class="form-control" required min="99999999" name="cedu_cli" value="">
                 </div>
                 <div class="col-md-4">
                     <label for=""> Email: <span class="obligatorio">(Campo Requerido)</span></label>
@@ -69,83 +69,78 @@
     </form>
 
     <script type="text/javascript">
-        $("#frm_nuevo_instructor").validate({
+        $("#frm_nuevo_cliente").validate({
             rules: {
-                cedula_ins: {
-                    required: true,
-                    minlength: 10,
-                    maxlength: 10,
-                    digits: true,
-                },
-                primer_apellido_ins: {
+                nom_cli: {
                     required: true,
                     minlength: 3,
-                    maxlength: 250,
+                    maxlength: 30,
+                },
+                ape_cli: {
+                    required: true,
+                    minlength: 3,
+                    maxlength: 20,
                     letras: true,
                 },
-                segundo_apellido: {
-                    letras: true,
-                },
-                nombres_ins: {
+                ciu_cli: {
                     required: true,
                     minlength: 5,
                     maxlength: 250,
                     letras: true,
                 },
-                titulo_ins: {
-                    required: true,
-                    minlength: 3,
-                    maxlength: 150,
-                    letras: true,
-                },
-                telefono_ins: {
+                tele_cli: {
                     required: true,
                     minlength: 10,
                     maxlength: 10,
                 },
-                direccion_ins: {
+                cedu_cli: {
                     required: true,
-                    minlength: 20,
-                    maxlength: 300,
+                    minlength: 10,
+                    maxlength: 10,
+                    digits: true,
+                },
+
+                mail_cli: {
+                    required: true,
+                    minlength: 3,
+                    maxlength: 60,
                     letras: true,
                 }
             },
             messages: {
-                cedula_ins: {
-                    required: "Por favor ingrese el número de cedula",
-                    minlength: "Cédula incorrecta, ingrese 10 digitos",
-                    maxlength: "Cédula incorrecta, ingrese 10 digitos",
-                    digits: "Este campo solo acepta números",
-                    number: "Este campo solo acepta números",
+                nom_cli: {
+                    required: "Por favor ingresar un nombre",
+                    minlength: "El apellido debe tener al menos 3 caracteres",
+                    maxlength: "Nombre incorrecto",
+
                 },
-                primer_apellido_ins: {
+                ape_cli: {
                     required: "Por favor ingrese el primer apellido",
                     minlength: "El apellido debe tener al menos 3 caracteres",
                     maxlength: "Apellido incorrecto",
                 },
-                segundo_apellido: {
-
-                },
-                nombres_ins: {
-                    required: "Por favor ingresar un nombre",
+                ciu_cli: {
+                    required: "Por favor ingresar la ciudad",
                     minlength: "El apellido debe tener al menos 3 caracteres",
                     maxlength: "Nombre incorrecto",
                 },
-                titulo_ins: {
-                    required: "Por favor ingresar un titulo obtenido",
-                    minlength: "El titulo debe tener al menos 3 caracteres",
-                    maxlength: "Titulo muy largo",
-                },
-                telefono_ins: {
+                tele_cli: {
                     required: "Por favor ingresa un número de telefono",
                     minlength: "Cédula incorrecta, ingrese 10 digitos",
                     maxlength: "Cédula incorrecta, ingrese 10 digitos",
                     digits: "Este campo solo acepta números",
                     number: "Este campo solo acepta números",
                 },
-                direccion_ins: {
-                    required: "Por favor ingresa una Direccion de Domicilio",
-                    minlength: "La dirección debe tener al menos 20 caracteres",
+                cedu_cli: {
+                    required: "Por favor ingrese el número de cedula",
+                    minlength: "Cédula incorrecta, ingrese 10 digitos",
+                    maxlength: "Cédula incorrecta, ingrese 10 digitos",
+                    digits: "Este campo solo acepta números",
+                    number: "Este campo solo acepta números",
+                },
+                mail_cli: {
+                    required: "Por favor ingresa un correo electronico",
+                    minlength: "La dirección debe tener al menos 8 caracteres",
                     maxlength: "Direccion muy Extensa",
 
                 }

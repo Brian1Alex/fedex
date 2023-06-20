@@ -16,7 +16,12 @@
                 <div class="col-md-4">
                     <label for="">Ciudad: <span class="obligatorio">(Campo Requerido)</span></label>
                     <br>
-                    <input type="text" placeholder="Ingresar la ciudad del cliente" class="form-control" name="ciu_suc" value="">
+                    <select class="form-control" name="ciu_suc" id="">
+                        <option value=""></option>
+                        <option value="Quito">Quito</option>
+                        <option value="Guayaquil">Guayaquil</option>
+                        <option value="Cuenca">Cuenca</option>
+                    </select>
                 </div>
                 <div class="col-md-6">
                     <label for=""> Latitud: </span></label>
