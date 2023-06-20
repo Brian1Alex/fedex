@@ -1,7 +1,7 @@
 <div class="services_section layout_padding">
       <div class="container" Align="center">
          <h1 class="services_taital">Contactos </h1>
-         <p class="services_text">Disponibles en horarios laborales 7:00-18:00</p>
+         <p class="services_text">Disponoble en</p>
          <div class="services_section_2">
             <div class="row">
                <div class="col-md-4">
