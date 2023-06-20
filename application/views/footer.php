@@ -1,19 +1,18 @@
  <style>
-    .tit{
-        color: aliceblue;
-    }
+     .tit {
+         color: aliceblue;
+     }
 
-    .body{
-        background-color: #E7FFFF;
-    }
+     .body {
+         background-color: #E7FFFF;
+     }
 
-    .ed{
-        color: blue;
-    }
-
+     .ed {
+         color: blue;
+     }
  </style>
-    
- 
+
+
  <!-- footer section start -->
  <div class="footer_section layout_padding">
      <div class="container">
@@ -31,6 +30,9 @@
                  <li><a href="https://www.instagram.com/fedex/"><img src="<?php echo base_url(); ?>/plantilla/images/instagram-icon.png"></a></li>
              </ul>
          </div>
+         <!-- Back to Top -->
+         <a href="#" class="btn btn-lg btn-primary back-to-top" Align="center"><i class="fa fa-angle-double-up"></i></a>
+
      </div>
  </div>
  <!-- footer section end -->
