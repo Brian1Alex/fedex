@@ -49,10 +49,10 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="about.html">Sucursales</a>
+                <a class="nav-link" href="<?php echo site_url() ?>/sucursales/iniSucu">Sucursales</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="<?php echo site_url() ?>/clientes/cliente">Clientes</a>
+                <a class="nav-link" href="<?php echo site_url() ?>/clientes/iniClie">Clientes</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link " href="blog.html">Pedidos</a>
@@ -68,7 +68,7 @@
         <div class="logo"><a href="<?php echo site_url(); ?>"><img src="<?php echo base_url(); ?>/assets/images/logo.png" Alt="Inicio" width="150px"></a></div>
         <div class="menu_main">
           <ul>
-            <li><a href="about.html">Sucursales</a></li>
+            <li><a href="<?php echo site_url() ?>/sucursales/iniSucu">Sucursales</a></li>
             <li><a href="<?php echo site_url() ?>/clientes/iniClie">Clientes</a></li>
             <li><a href="blog.html">Pedidos</a></li>
             <li><a href="contact.html">Contactanos</a></li>
