@@ -64,4 +64,15 @@
     <?php else : ?>
         <h1 Align="center">No posee Clientes ._.</h1>
     <?php endif; ?>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="btn_main"><a href="<?php echo site_url() ?>/clientes/agreClie">Agregar Nuevo</a></div>
+            </div>
+            <div class="col-md-6">
+                <div class="btn_main active"><a href="<?php echo site_url() ?>/clientes/ubiClie">Ubicaciones</a></div>
+            </div>
+        </div>
+    </div>
 </div>

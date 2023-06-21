@@ -6,17 +6,22 @@
                 <div class="col-md-4">
                     <label for="">Nombre: <span class="obligatorio">(Campo Requerido)</span></label>
                     <br>
-                    <input type="text" placeholder="Ingresar nombre del cliente" class="form-control" name="nom_suc" value="">
+                    <input type="text" placeholder="Ingresar nombre del cliente" class="form-control" required name="nom_suc" value="">
                 </div>
                 <div class="col-md-4">
                     <label for=""> Telefono: <span class="obligatorio">(Campo Requerido)</span></label>
                     <br>
-                    <input type="number" placeholder="Ingresar el telefono del Cliente" class="form-control" name="tele_suc" value="">
+                    <input type="number" placeholder="Ingresar el telefono del Cliente" class="form-control"  required min="99999999" name="tele_suc" value="">
                 </div>
                 <div class="col-md-4">
                     <label for="">Ciudad: <span class="obligatorio">(Campo Requerido)</span></label>
                     <br>
-                    <input type="text" placeholder="Ingresar la ciudad del cliente" class="form-control" name="ciu_suc" value="">
+                    <select class="form-control" required name="ciu_suc" id="">
+                        <option value=""></option>
+                        <option value="Quito">Quito</option>
+                        <option value="Guayaquil">Guayaquil</option>
+                        <option value="Cuenca">Cuenca</option>
+                    </select>
                 </div>
                 <div class="col-md-6">
                     <label for=""> Latitud: </span></label>
@@ -52,7 +57,49 @@
 
     </form>
 
+    <script type="text/javascript">
+        $("#frm_nueva_sucursal").validate({
+            rules: {
+                nom_suc: {
+                    required: true,
+                    minlength: 3,
+                    maxlength: 30,
+                },
+                tele_suc: {
+                    required: true,
+                    minlength: 10,
+                    maxlength: 10,
+                    digits: true,
+                },
+                ciu_suc: {
+                    required: true,
+                    minlength: 5,
+                    maxlength: 250,
+                    letras: true,
+                },
+            },
+            messages: {
+                nom_suc: {
+                    required: "Por favor ingresar un nombre",
+                    minlength: "El apellido debe tener al menos 3 caracteres",
+                    maxlength: "Nombre incorrecto",
 
+                },
+                tele_suc: {
+                    required: "Por favor ingresa un número de telefono",
+                    minlength: "Cédula incorrecta, ingrese 10 digitos",
+                    maxlength: "Cédula incorrecta, ingrese 10 digitos",
+                    digits: "Este campo solo acepta números",
+                    number: "Este campo solo acepta números",
+                },
+                ciu_suc: {
+                    required: "Por favor ingresar la ciudad",
+                    minlength: "El apellido debe tener al menos 3 caracteres",
+                    maxlength: "Nombre incorrecto",
+                }
+            }
+        });
+    </script>
 
     <script type="text/javascript">
         function initMap() {
