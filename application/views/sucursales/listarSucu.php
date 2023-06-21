@@ -53,7 +53,7 @@
             </tbody>
         </table>
     <?php else : ?>
-        <h1 Align="center">No posee Clientes ._.</h1>
+        <h1 Align="center">No posee Sucursales ._.</h1>
     <?php endif; ?>
 
     <div class="container">
