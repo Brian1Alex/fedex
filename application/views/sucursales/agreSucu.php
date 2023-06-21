@@ -14,21 +14,26 @@
                     <input type="number" placeholder="Ingresar el telefono del Cliente" class="form-control"  required min="99999999" name="tele_suc" value="">
                 </div>
                 <div class="col-md-4">
-                    <label for="">Ciudad: <span class="obligatorio">(Campo Requerido)</span></label>
+                    <label for=""> Ciudad: <span class="obligatorio">(Campo Requerido)</span></label>
                     <br>
-                    <select class="form-control" required name="ciu_suc" id="">
+                    <input type="text" placeholder="Ingresar el telefono del Cliente" class="form-control"  required name="ciu_suc" value="">
+                </div>
+                <div class="col-md-4">
+                    <label for="">Region: <span class="obligatorio">(Campo Requerido)</span></label>
+                    <br>
+                    <select class="form-control" required name="regi_suc" id="">
                         <option value=""></option>
-                        <option value="Quito">Quito</option>
-                        <option value="Guayaquil">Guayaquil</option>
-                        <option value="Cuenca">Cuenca</option>
+                        <option value="Sierra">Sierra</option>
+                        <option value="Costa">Costa</option>
+                        <option value="Oriente">Oriente</option>
                     </select>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <label for=""> Latitud: </span></label>
                     <br>
                     <input type="text" readonly placeholder="Latitud del cliente" id="lati_suc" class="form-control" name="lati_suc" value="">
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <label for=""> Longitud: </span></label>
                     <br>
                     <input type="text" readonly placeholder="Longitud del cliente" id="longi_suc" class="form-control" name="longi_suc" value="">
@@ -52,7 +57,7 @@
                 GUARDAR
             </button>
             &nbsp;
-            <a href="<?php echo site_url(); ?>/clientes/listarClie" class="btn btn-danger">CANCELAR</a>
+            <a href="<?php echo site_url(); ?>/sucursales/listarSucu" class="btn btn-danger">CANCELAR</a>
         </div>
 
     </form>

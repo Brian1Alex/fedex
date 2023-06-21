@@ -1,6 +1,6 @@
 <div class="contact_section layout_padding">
     <h1 class="contact_taital" Align="center">Localizaciones de los Clientes </h1>
-    <p class="contact_text" Align="center">Una pequeña referencia de lor remitentes de los envios que se han realizado</p>
+    <p class="contact_text" Align="center">Una pequeña referencia de los remitentes de los envios que se han realizado</p>
     <div class="container">
         <div class="row">
             <div class="col md-12">

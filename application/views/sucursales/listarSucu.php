@@ -1,5 +1,5 @@
 <div class="contact_section layout_padding">
-    <h1 class="contact_taital" Align="center">Listado de Clientes</h1>
+    <h1 class="contact_taital" Align="center">Listado de Sucursales</h1>
 
     <?php if ($sucursales) : ?>
         <table class="table table-striped">
@@ -28,6 +28,9 @@
                         </td>
                         <td>
                             <?php echo $filaTempo->ciu_suc; ?>
+                        </td>
+                        <td>
+                            <?php echo $filaTempo->regi_suc; ?>
                         </td>
                         <td>
                             <?php echo $filaTempo->lati_suc; ?>

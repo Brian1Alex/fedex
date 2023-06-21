@@ -31,7 +31,9 @@ class Sucursales extends CI_Controller
 
     public function ubiSucu()
     {
-        $mapaSuc["ubiSuc"]=$this->Sucursal->ubicaSuc();
+        $mapaSuc["ubiQuito"]=$this->Sucursal->ubicaQuito();
+        $mapaSuc["ubiCosta"]=$this->Sucursal->ubicaCosta();
+        $mapaSuc["ubiOrien"]=$this->Sucursal->ubicaOrie();
         $this->load->view('header');
         $this->load->view('sucursales/ubiSucu', $mapaSuc);
         $this->load->view('footer');
@@ -43,6 +45,7 @@ class Sucursales extends CI_Controller
             "nom_suc" => $this->input->post('nom_suc'),
             "tele_suc" => $this->input->post('tele_suc'),
             "ciu_suc" => $this->input->post('ciu_suc'),
+            "regi_suc" => $this->input->post('regi_suc'),
             "lati_suc" => $this->input->post('lati_suc'),
             "longi_suc" => $this->input->post('longi_suc')
         );

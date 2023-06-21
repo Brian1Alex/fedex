@@ -36,4 +36,31 @@ class Sucursal extends CI_Model
             return false;
         }
     }
+
+    function ubicaQuito()
+    {
+        $listaUbiSie=$this->db->select()->where('regi_suc','Sierra')->get("sucursal");
+        if ($listaUbiSie->num_rows() > 0) {
+            return $listaUbiSie->result();
+        }
+        return false;
+    }
+
+    function ubicaCosta()
+    {
+        $listadoUbiCos=$this->db->select()->where('regi_suc','Costa')->get("sucursal");
+        if ($listadoUbiCos->num_rows() > 0) {
+            return $listadoUbiCos->result();
+        }
+        return false;
+    }
+
+    function ubicaOrie()
+    {
+        $listadoUbiCos=$this->db->select()->where('regi_suc','Oriente')->get("sucursal");
+        if ($listadoUbiCos->num_rows() > 0) {
+            return $listadoUbiCos->result();
+        }
+        return false;
+    }
 }
