@@ -3,10 +3,15 @@
     <form class="" id="frm_nuevo_pedido" action="<?php echo site_url(); ?>/Pedidos/guardaPed" method="post">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
-                    <label for="">Nombre: <span class="obligatorio">(Campo Requerido)</span></label>
+            <div class="col-md-4">
+                    <label for="">ID PEDIDO: <span class="obligatorio">(Campo Requerido)</span></label>
                     <br>
-                    <input type="text" placeholder="Ingresar caracteristica del pedido" class="form-control" name="nom_ped" value="">
+                    <input type="text" placeholder="Ingresar ID del pedido" class="form-control" name="id_ped" value="">
+                </div>
+                <div class="col-md-4">
+                    <label for="">Nombre de Pedido: <span class="obligatorio">(Campo Requerido)</span></label>
+                    <br>
+                    <input type="text" placeholder="Ingresar el nombre del pedido" class="form-control" name="nom_ped" value="">
                 </div>
                 <div class="col-md-4">
                     <label for=""> Descripcion: <span class="obligatorio">(Campo Requerido)</span></label>

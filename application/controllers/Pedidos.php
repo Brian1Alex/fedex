@@ -40,11 +40,12 @@
 
         public function guardaPed(){
             $datosNuevPed = array(
+                "id_ped" => $this->input->post('id_ped'),
                 "nom_ped" => $this->input->post('nom_ped'),
                 "desc_ped" => $this->input->post('desc_ped'),
-                "nombre_des_ped" => $this->input->post('nombre_des_ped'),
+                "nom_des_ped"=> $this->input->post('nom_des_ped'),
                 "lati_ped" => $this->input->post('lati_ped'),
-                "longi_ped" => $this->input->post('longi_ped'),
+                "longi_ped" => $this->input->post('longi_ped')
             );
             if ($this->Pedido->insertar($datosNuevPed)) {
                 redirect('pedidos/listarPedi');
